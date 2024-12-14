@@ -1,0 +1,223 @@
+body{
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    border-bottom: 1px solid black;
+    
+
+}
+.logo{
+    text-align: center;
+}
+.navbar .page-links{
+    display: flex;
+    justify-content: space-between;
+    line-height: 0;
+    
+    
+}
+.navbar a{
+    margin-right: 20px;
+    color: black;
+    text-decoration: none;
+
+}
+.navbar h1{
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.main{
+    background-color: brown;
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+.landing-page{
+    display: flex;
+    width: 95%;
+    padding: 100px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+.landing-page h1{
+    text-align: center;
+    font-size: 110px;
+    width: 100vh;
+    height: auto;
+    font-weight: normal;
+    letter-spacing: -2%;
+    line-height: 120px;
+    margin: 10px;
+    
+}
+.landing-page img{
+    width: 100%;
+    height: 672px;
+}
+.collage{
+    margin: 0;
+    padding: 0;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin-bottom: 50px;
+    gap: 70px;
+}
+.collage-img{
+    padding: 0;
+}
+.collage-img img{
+    height: 277px;
+    width: 416px;
+    
+}
+
+.text-content{
+    margin: 0;
+    padding: 0;
+    line-height: 0.3;
+    /* background-color: #fff; */
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 400;
+}
+.subtitle{
+    font-size: 17px;
+    font-weight: 400;
+    color: #00000099;
+}
+
+.portfolio{
+    display: flex;
+    width: Fill (1,344px)px;
+    height: Hug (250px)px;
+    padding: 48px 0px 48px 0px;
+    gap: 48px;
+    opacity: 0px;
+    background: #FFFFFF;
+
+
+}
+
+.spacer{
+    width: 648px;
+    height: 154px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.portfolio p{
+    width: 648px;
+    height: 154px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Newsreader;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.005em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+
+
+
+}
+
+.feature-description{
+
+    border-bottom: 2px solid #00000029;
+    background-color: greenyellow;
+    display: flex;
+    width: 95%;
+    padding: 100px 0;
+    justify-content: right;
+
+}
+.img-div{
+    width: 868px;
+height: 900px;
+left: 572px;
+padding: 0px 68px 0px 0px;
+gap: 0px;
+opacity: 0px;
+
+}
+.img-div img{
+    width: 800px;
+height: 1028px;
+gap: 0px;
+opacity: 0px;
+
+}
+
+.feature-description .text-content{
+    width: Fixed (624px)px;
+height: Hug (244px)px;
+top: 328px;
+gap: 48px;
+opacity: 0px;
+
+}
+
+.text-content .frame{
+    width: Fill (624px)px;
+height: Hug (148px)px;
+gap: 16px;
+opacity: 0px;
+
+}
+.my-work{
+    font-family: Lexend Exa;
+font-size: 64px;
+font-weight: 300;
+line-height: 68px;
+letter-spacing: -0.02em;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+.text-content .des{
+    font-family: Newsreader;
+font-size: 24px;
+font-weight: 400;
+line-height: 32px;
+letter-spacing: -0.005em;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+.text-content .button-large{
+    width: Hug (252px)px;
+height: Hug (48px)px;
+padding: 12px 24px 12px 24px;
+gap: 0px;
+border-radius: 8px;
+border: 0;
+opacity: 0px;
+background: #AD7C00;
+
+}
