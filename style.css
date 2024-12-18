@@ -39,7 +39,7 @@ body{
 
 .main{
     background-color: rgb(206, 7, 7);
-    margin: 15px;
+    margin:0px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -102,24 +102,24 @@ body{
 .collage {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    background-color: #44a047;
+    
 
 }
-
-.collage .tt{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-content:center;
-    gap: 1%;
-    margin-bottom: 50px;
+.collage-img{
+    height: 370px;
+    width: 440px;
+    background-color: blueviolet;
+    margin: 20px;
+    
 }
 
 .collage-img img{
-    height: 80%;
-    width: 90%;
-    
-    
-    
+    width: 100%;
+
 }
+
 
 
 .text-content{
@@ -139,7 +139,7 @@ body{
     color: #00000099;
 }
 
-/* .portfolio{
+.portfolio{
     display: flex;
     width: 100%;
 
@@ -187,27 +187,13 @@ body{
     padding: 100px 0;
     justify-content: right;
 
-} */
+}
 
 
 
 @media only screen and (max-width:1024px){
-    .collage .tt{
-        grid-template-columns: 1fr 1fr ;
-    }
+    
     .landing-page h1{
         font-size: 12vw;
-    }
-    .title{
-        font-size: 18px;
-    }
-    .subtitle{
-        font-size: 15px;
-    }
-}
-@media only screen and (max-width:767px){
-    .collage .tt{
-        grid-template-columns: 1fr;
-        gap: 15px;
     }
 }
