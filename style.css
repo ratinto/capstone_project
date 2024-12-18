@@ -38,7 +38,7 @@ body{
 }
 
 .main{
-    background-color: brown;
+    background-color: rgb(206, 7, 7);
     margin: 15px;
     display: flex;
     justify-content: center;
@@ -56,7 +56,7 @@ body{
 .landing-page h1{
     text-align: center;
     font-size: 110px;
-    width: 100vh;
+    width: 100%;
     height: auto;
     font-weight: normal;
     letter-spacing: -2%;
@@ -66,29 +66,66 @@ body{
 }
 .landing-page img{
     width: 100%;
-    height: 672px;
+    height: 70%;
 }
-.collage{
-    margin: 0;
+/* .collage{
+    margin: 0px;
     padding: 0;
+    width: 100%;
+    background-color: #AD7C00;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .row{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 0;
-    margin-bottom: 50px;
-    gap: 70px;
+    margin: 1%;
+    margin-bottom: 5%;
+    gap: 1%;
+    background-color: aqua;
+    width: 100%;
 }
 .collage-img{
     padding: 0;
+
 }
 .collage-img img{
-    height: 277px;
-    width: 416px;
+    height: 80%;
+    width: 100%;
+    
+    
+} */
+
+.collage{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content:space-between;
+    gap: 1%;
+    margin-bottom: 50px;
+}
+
+.collage-img img{
+    height: 80%;
+    width: 100%;
+    
     
 }
 
+
+@media only screen and (max-width:1024px){
+    .collage{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+@media only screen and (max-width:767px){
+    .collage{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
 .text-content{
     margin: 0;
     padding: 0;
@@ -108,8 +145,8 @@ body{
 
 .portfolio{
     display: flex;
-    width: Fill (1,344px)px;
-    height: Hug (250px)px;
+    width: 100%;
+
     padding: 48px 0px 48px 0px;
     gap: 48px;
     opacity: 0px;
