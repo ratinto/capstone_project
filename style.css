@@ -299,9 +299,7 @@ body {
     font-size: 15px;
   }
 
-  .landing-page h1 {
-    font-size: 12vw;
-  }
+
 }
 
 @media only screen and (max-width: 768px) {
