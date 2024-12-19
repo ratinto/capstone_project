@@ -1,199 +1,424 @@
-body{
-    background-color: rgb(255, 255, 255);
-    padding: 0;
-    margin: 0;
+body {
+  background-color: rgb(255, 255, 255);
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
 
-
+/* for the navigation bar */
 
 .navbar {
-    background-color: white;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.271);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Playball", cursive;
+  /* background-color: aqua; */
+  width: 200px;
+}
+
+.navbar .page-links {
+  display: flex;
+  justify-content: space-between;
+  line-height: 0;
+  margin-right: 50px;
+  font-family: "Lexend Exa", sans-serif;
+}
+
+.navbar a {
+  margin-right: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.navbar .logo h1 {
+  font-weight: normal;
+  font-size: 42px;
+  margin: 0;
+}
+
+/* for the main conteint */
+
+.main {
+  /* background-color: rgb(255, 255, 0); */
+  margin: 0px;
+  width: 100vw;
+}
+.landing-page {
+  display: flex;
+  width: 100%;
+  padding: 100px 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.landing-page h1 {
+  text-align: center;
+  font-size: 7vw;
+  width: 100%;
+  height: auto;
+  font-weight: lighter;
+  letter-spacing: -2%;
+  margin: 10px;
+  font-family: "Lexend Exa", sans-serif;
+}
+.landing-page img {
+  width: 90%;
+  height: 70%;
+  border-radius: 8px;
+}
+
+/* for making of the collage */
+.collage {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* background-color: #1f9c34; */
+  gap: 20px;
+}
+
+.collage-img {
+  height: 20%;
+  width: 25%;
+  margin: 2%;
+}
+
+.collage-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.text-content {
+  margin: 0;
+  padding: 0;
+  line-height: 0.3;
+  font-family: "Newsreader", serif;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.subtitle {
+  font-size: 17px;
+  font-weight: 400;
+  color: #00000099;
+}
+
+/* for the portfolio */
+
+.portfolio {
+  display: flex;
+  width: 95%;
+  padding: 40px 0px 48px 0px;
+  gap: 48px;
+  /* background: #450abb; */
+}
+
+.spacer {
+  width: 50%;
+}
+
+.portfolio p {
+  width: 50%;
+  font-size: 25px;
+  font-family: "Newsreader", serif;
+  font-weight: lighter;
+}
+
+/* for the featured */
+
+.feature-description {
+  /* background-color: pink; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.feature-text-content {
+  width: 70%;
+  /* background-color: aqua; */
+}
+.img-div img {
+  width: 50vw;
+}
+.frame {
+  margin: 20px;
+}
+.my-work {
+  font-size: 4vw;
+  line-height: 1;
+  margin-bottom: 0;
+  font-family: "Lexend Exa", sans-serif;
+}
+
+.des {
+  font-size: 2vw;
+  font-weight: lighter;
+  font-family: "Newsreader", serif;
+}
+.button-large {
+  margin-left: 20px;
+  width: 40%;
+  height: 5vw;
+  background-color: #ad7c00;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.5vw;
+  font-family: "Lexend Exa", sans-serif;
+}
+
+/* for about section */
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 40px 0;
+  /* background-color: #1f9c34; */
+}
+
+.about p {
+  width: 60%;
+  font-size: 3vw;
+  text-align: center;
+  font-family: "Lexend Exa", sans-serif;
+}
+
+/* for contact me section */
+
+.contact-section {
+  /* background-color: #f8dcc4; */
+  padding: 40px;
+  text-align: center;
+}
+
+.contact-section .h2-container {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+  max-width: 760px;
+  font-family: "Lexend Exa", sans-serif;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  font-family: "Newsreader", serif;
+}
+
+.contact-column {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.contact-column h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.contact-column p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* for the footer part */
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  /* background-color: #d21e1e; */
+  border-top: 1px solid #ddd;
+  font-family: "Arial", sans-serif;
+}
+
+.footer-left p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  font-family: "Lexend Exa", sans-serif;
+}
+
+.footer-right .contact-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  color: #000;
+  /* background-color: #fff; */
+  /* border: 1px solid #ddd; */
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Lexend Exa", sans-serif;
+}
+
+.footer-right .contact-button:hover {
+  /* background-color: #f8f8f8; */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* media queries for responsive page */
+
+@media only screen and (max-width: 1024px) {
+  .collage-img {
+    width: 300px;
+    height: auto;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .landing-page h1 {
+    font-size: 12vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .collage {
+    justify-content: center;
+  }
+
+  .collage-img {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-column {
+    margin: 8px 0;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .landing-page h1 {
+    font-size: 7vw;
+  }
+  .navbar .page-links {
+    display: none;
+  }
+  .navbar::after {
+    content: "☰";
+    font-size: 24px;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 50px;
+  }
+  .collage-img {
+    margin: 10px;
+    width: 50%;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  .subtitle {
+    font-size: 12px;
+  }
+  .logo {
+    font-size: 100px;
+  }
+
+  .portfolio p {
+    width: 100%;
+    font-size: 2vw;
+    font-family: "Newsreader", serif;
+  }
+
+  .feature-description {
+    flex-direction: column-reverse;
+  }
+  /* .feature-description .img-div{
+    width: 100%;
+  } */
+  .feature-description .img-div img {
+    width: 100%;
+  }
+
+  .feature-text-content {
+    width: 80%;
+    height: 23vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 16px;
-    border-bottom: 1px solid black;
-    
+  }
 
-}
-.logo{
-    text-align: center;
-}
-.navbar .page-links{
-    display: flex;
-    justify-content: space-between;
-    line-height: 0;
-    
-    
-}
-.navbar a{
-    margin-right: 20px;
-    color: black;
-    text-decoration: none;
-
-}
-.navbar h1{
-    font-weight: normal;
-    font-size: 18px;
-}
-
-.main{
-    background-color: rgb(206, 7, 7);
-    margin:0px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-}
-.landing-page{
-    display: flex;
-    width: 95%;
-    padding: 100px 0;
-    justify-content: center;
-    flex-wrap: wrap;
-
-}
-.landing-page h1{
-    text-align: center;
-    font-size: 110px;
-    width: 100%;
-    height: auto;
-    font-weight: normal;
-    letter-spacing: -2%;
-
-    margin: 10px;
-    
-}
-.landing-page img{
-    width: 100%;
-    height: 70%;
-}
-/* .collage{
-    margin: 0px;
-    padding: 0;
-    width: 100%;
-    background-color: #AD7C00;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.row{
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 1%;
-    margin-bottom: 5%;
-    gap: 1%;
-    background-color: aqua;
-    width: 100%;
-}
-.collage-img{
-    padding: 0;
-
-}
-.collage-img img{
-    height: 80%;
-    width: 100%;
-    
-    
-} */
-
-.collage {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: #44a047;
-    
-
-}
-.collage-img{
-    height: 370px;
-    width: 440px;
-    background-color: blueviolet;
+  .frame {
     margin: 20px;
-    
-}
+    width: 80%;
+  }
 
-.collage-img img{
-    width: 100%;
+  .des {
+    font-weight: lighter;
+    font-family: "Newsreader", serif;
+  }
+  .button-large {
+    margin-left: 20px;
+    width: 40%;
+    height: 6vw;
+    background-color: #ad7c00;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5vw;
+    font-family: "Lexend Exa", sans-serif;
+  }
 
-}
+  .about p {
+    width: 80%;
+  }
 
+  .contact-container {
+    margin-bottom: 0;
+  }
 
-
-.text-content{
+  .footer-left p {
     margin: 0;
-    padding: 0;
-    line-height: 0.3;
-    /* background-color: #fff; */
-}
+    font-size: 12px;
+    color: #555;
+    font-family: "Lexend Exa", sans-serif;
+  }
 
-.title{
-    font-size: 20px;
-    font-weight: 400;
-}
-.subtitle{
-    font-size: 17px;
-    font-weight: 400;
-    color: #00000099;
-}
-
-.portfolio{
-    display: flex;
-    width: 100%;
-
-    padding: 48px 0px 48px 0px;
-    gap: 48px;
-    opacity: 0px;
-    background: #FFFFFF;
-
-
-}
-
-.spacer{
-    width: 648px;
-    height: 154px;
-    gap: 0px;
-    opacity: 0px;
-
-}
-
-.portfolio p{
-    width: 648px;
-    height: 154px;
-    gap: 0px;
-    opacity: 0px;
-    font-family: Newsreader;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 32px;
-    letter-spacing: -0.005em;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #000000;
-
-
-
-}
-
-.feature-description{
-
-    border-bottom: 2px solid #00000029;
-    background-color: greenyellow;
-    display: flex;
-    width: 95%;
-    padding: 100px 0;
-    justify-content: right;
-
-}
-
-
-
-@media only screen and (max-width:1024px){
-    
-    .landing-page h1{
-        font-size: 12vw;
-    }
+  .footer-right .contact-button {
+    font-size: 10px;
+  }
 }
