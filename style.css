@@ -324,7 +324,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 740px) {
   .landing-page h1 {
     font-size: 7vw;
   }
