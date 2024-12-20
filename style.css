@@ -73,11 +73,14 @@ body {
   letter-spacing: -2%;
   margin: 10px;
   font-family: "Lexend Exa", sans-serif;
+
+  
 }
 .landing-page img {
   width: 90%;
   height: 70%;
   border-radius: 8px;
+  box-shadow: 0.1px 0.1px 20px rgb(193, 183, 173);
 }
 
 /* for making of the collage */
@@ -99,6 +102,12 @@ body {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  transition: 0.2s linear;
+}
+.collage-img img:hover{
+  transform: scale(1.03);
+  box-shadow: 0.1px 0.1px 30px rgb(174, 173, 173);
+
 }
 
 .text-content {
@@ -138,7 +147,36 @@ body {
   font-size: 25px;
   font-family: "Newsreader", serif;
   font-weight: lighter;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1.5s ease-out forwards;
+  
 }
+
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* for the featured */
 
@@ -182,6 +220,15 @@ body {
   color: #ffffff;
   font-size: 1.5vw;
   font-family: "Lexend Exa", sans-serif;
+  /* box-shadow: 1px 1px 10px #7b5902 ;
+  text-shadow: 1px 1px 30px white; */
+}
+
+.button-large:hover{
+  transition: 0.3s ease-in-out;
+  box-shadow: 1px 1px 10px #7b5902 ;
+  text-shadow: 1px 1px 30px white;
+  transform: scale(1.009);
 }
 
 /* for about section */
